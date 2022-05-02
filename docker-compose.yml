@@ -11,6 +11,8 @@ services:
     networks: 
       - frontend
       - backend
+    volumes:
+      - /Users/pankhubh/code/docker-nginx/frontend/csp.conf:/etc/nginx/conf.d/csp.conf
   
   backend:
     image: nginx-backend
